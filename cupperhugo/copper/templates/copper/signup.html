@@ -1,0 +1,18 @@
+{% extends 'copper/base.html'  %}
+{% load static %}
+{% block content %}
+    <div class="signform">
+        <h3  class="mb-5">Sign Up</h3>
+        <a    href="/home">Home</a>  / <span style="color: red;">Sign Up</span>
+        
+        <form action="" method="POST" class="form form-control w-100" style="background-color: white;">
+            <h2>Sign up now</h2>
+            <hr>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-danger" value="Sign Up" class="btn">
+        </form>
+
+    </div>
+
+{% endblock content %}

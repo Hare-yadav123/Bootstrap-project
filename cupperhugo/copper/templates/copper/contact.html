@@ -1,0 +1,93 @@
+{% extends 'copper/base.html'  %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="/home">Home</a>  / <span style="color: red;">Contact Us</span>
+    </div>
+    
+    <div class="disc" style="margin-top: 10%;">
+        <h4>Contact us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ex voluptas nostrum accusamus? Omnis ullam dolorem iure, harum consequuntur, quam obcaecati distinctio, ratione praesentium facere mollitia aliquam. Ut, laudantium accusantium.</p>
+    </div>
+    
+    <div class="con-row">
+        <div class="head"  style="background-color: white; border-radius: 10px;">
+            <div class="ct-form">
+                <div class="cnt-form w-100">
+                    <form action="" class="form w-50 h-50"   method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" class="btn btn-danger" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ct-detail" style="background-color: white; border-radius: 10px;">
+            <h3>our contact information</h3>
+            <div class="info">
+                <ul>
+                    <li>hareyadav2546@gmail.com</li>
+                    <li>6588992103</li>
+                    <li>Gt-No:45 Wagholi Pune Maharastra </li>
+                </ul>
+            </div>
+    
+        </div>
+    </div>
+    <!---------------------footur ------------ -->
+    
+    <div class="add" >
+        <address>
+            Join 75,000+ Growing Business That <br> <span>Use Copper To Their Brand</span><br> <br> <br>
+            <a href=""><input type="submit" class="btn" value="Get start with us >"><i claas="fa fa-arrow-right"></i></a>
+        </address>
+    </div>
+    <hr>
+    
+    <div class="row">
+        <div class="copper col-sm-3">
+            <h5>cupper</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, vero!</p>
+        </div>
+    
+        <div class="link col-sm-3">
+            <h5>sociallink</h5>
+            <a href=""><i class="fa fa-facebook-square" style="color: blue;">facebook</i></a><br>
+            <a href=""><i class="fa fa-instagram"  style="color:rgba(red, green, blue, alpha);"></i></a>instagram<br>
+            <a href=""><i class="fa fa-youtube-play" style="color: #ff0000;"></i>Youtube</a><br>
+            <a href=""><i class="fa fa-whatsapp" style="color:green;"></i></a>whatsapp<br>
+        </div>
+    
+        <div class="scl col-sm-3">
+            <h5>Quick-link</h5>
+            <a href="">fpq</a><br>
+            <a href="">Term&condition</a><br>
+            <a href="">Privacy policy</a><br>
+        </div>
+    
+        <div class="col-sm-3">
+            <h5>Let's Subscribe your mail</h5>
+          
+              <div class="col-sm-1.5">
+                <input type="email" name="email" class="border rounded" placeholder="write your mail">
+                <a href="/signup/"><i class="fa fa-arrow-right  border-box"></i></a>
+              </div>
+            
+        </div>
+    
+      </div>
+    
+    </div>
+    
+    
+    
+
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,121 @@
+{% extends 'copper/base.html'  %}
+{% load static %}
+{% block content  %}
+
+<div class="container-fluid">
+
+    <!-- ------------------header-------------------- -->
+    <div style="background-color: whitesmoke;">
+        <div class="blog" style="background-color: white; border-radius: 5%; margin-left:40%  ; margin-right:40% ;">
+            <h3>Blog</h3>
+            <a href="/home">Home</a>  / <span style="color: red;">blog</span>
+        </div>
+        <div class="mid-head">
+            <h4>Find a source of knowladge</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. facere mollitia aliquam. Ut, laudantium accusantium.</p>
+        </div>
+        
+<!-- --------------------image section------------------------ -->
+
+        <div class="img-section">
+
+            <div class="img1">
+                <div class="image">
+                    <img src="{%  static 'copper/images/p1.jpg' %}" alt="" srcset="">
+                </div>
+             <p>Lor em ipsum dolor, sit amet consectetur adipisicing elit. Debitis fuga repellendus dolorum? Aliquam dolorum asperiores a iste sed nihil alias.</p>
+            </div>
+
+            <div class="img2">
+                <div class="image">
+                    <img src="{%  static 'copper/images/p2.jpg' %}" alt="" srcset="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fuga repellendus dolorum? Aliquam dolorum asperiores a iste sed nihil alias.</p>
+            </div>
+
+            <div class="img3">
+                <div class="image">
+                    <img src="{%  static 'copper/images/p3.jpg' %}" alt="" srcset="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fuga repellendus dolorum? Aliquam dolorum asperiores a iste sed nihil alias.</p>
+            </div> 
+
+        </div>
+
+    <!-- ------------------------------ -->
+
+        <div class="img-section">
+
+            <div class="img1">
+                <div class="image">
+                    <img src="{%  static 'copper/images/ab1.jpg' %}" alt="" srcset="">
+                </div>
+             <p>Lor em ipsum dolor, sit amet consectetur adipisicing elit. Debitis fuga repellendus dolorum? Aliquam dolorum asperiores a iste sed nihil alias.</p>
+            </div>
+
+            <div class="img2">
+                <div class="image">
+                    <img src="{%  static 'copper/images/ab2.jpg' %}" alt="" srcset="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fuga repellendus dolorum? Aliquam dolorum asperiores a iste sed nihil alias.</p>
+            </div>
+
+            <div class="img3">
+                <div class="image">
+                    <img src="{%  static 'copper/images/ab3.jpg' %}" alt="" srcset="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fuga repellendus dolorum? Aliquam dolorum asperiores a iste sed nihil alias.</p>
+            </div> 
+
+        </div>
+
+
+<!-- ------------------ footur---------------------- -->
+
+<div class="add">
+    <p>Join 75,000+ Growing Business That <br> <span>Use Copper To Their Brand</span></p><br><br> <br>
+    <a href=""><input class="btn btn-danger mb-5" type="button " value="Get start with us" ></a>
+</div>
+<hr>
+
+
+<div class="row">
+    <div class="copper col-sm-3">
+        <h5>cupper</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, vero!</p>
+    </div>
+
+    <div class="link col-sm-3">
+        <h5>sociallink</h5>
+        <a href=""><i class="fa fa-facebook-square" style="color: blue;">facebook</i></a><br>
+        <a href=""><i class="fa fa-instagram"  style="color:rgba(red, green, blue, alpha);"></i></a>instagram<br>
+        <a href=""><i class="fa fa-youtube-play" style="color: #ff0000;"></i>Youtube</a><br>
+        <a href=""><i class="fa fa-whatsapp" style="color:green;"></i></a>whatsapp<br>
+    </div>
+
+    <div class="scl col-sm-3">
+        <h5>Quick-link</h5>
+        <a href="">fpq</a><br>
+        <a href="">Term&condition</a><br>
+        <a href="">Privacy policy</a><br>
+    </div>
+
+    <div class="col-sm-3">
+        <h5>Let's Subscribe your mail</h5>
+      
+          <div class="col-sm-1.5">
+            <input type="email" name="email" class="border rounded" placeholder="write your mail">
+            <a href="/signup/"><i class="fa fa-arrow-right  border-box"></i></a>
+          </div>
+        
+    </div>
+
+  </div>
+
+</div>
+
+        
+    </div>
+
+</div>
+{% endblock content %}
